@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+nav {
+  background-color: rgb(29, 24, 21);
+  height: 2.5rem;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+nav ul {
+  list-style: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gamecontainer {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  position: relative;
+}
+.gameInfo{
+  display: flex;
+ align-self: self-start;
+  margin-top: 30px;
+}
+.box {
+  border: 2px solid black;
+  font-size: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.box:hover {
+  background-color: grey;
+}
+.gameInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 30px;
+}
+
+.winimg img {
+  width: 0px;
+  transition: width 1s ease-in-out;
+}
+.br {
+  border-right: 0px;
+}
+.bl {
+  border-left: 0px;
+}
+.bt {
+  border-top: 0px;
+}
+.bb {
+  border-bottom: 0px;
+}
+.div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reset {
+  margin-top: 20px;
+  color: white;
+  background: rgb(125, 122, 120);
+  border: 2px solid rgb(37, 31, 27);
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.reset:hover {
+  background-color: rgb(55, 55, 53);
+}
+.bgmusic{
+  margin-top: 20px;
+  color: white;
+  background: rgb(125, 122, 120);
+  border: 2px solid rgb(37, 31, 27);
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.bgmusic:hover {
+  background-color: rgb(55, 55, 53);
+}
+#info{
+  font-size: 20px;
+}
+
+@media screen and (max-width:900px) {
+  .container{
+    flex-wrap: wrap;
+  }
+  .gameInfo{
+    margin-top: 10px;
+
+  }
+  .gameInfo h1{
+    font-size: 1rem;
+  }
+  .gamecontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+  }
+  .div{
+ justify-content: space-evenly;
+ flex-direction: row;
+  }
+
+
+}
+
+
+/*  line animation  */
+.line{
+  width:0px;
+  background-color: black;;
+  position: absolute;
+  height:3px;
+  transition: width 1s ease-in-out;
+  background-color: rgb(163, 20, 20);
+  border-radius: 3px;
+
+}
